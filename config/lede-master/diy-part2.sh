@@ -30,6 +30,11 @@ echo "DISTRIB_SOURCECODE='lede'" >>package/base-files/files/etc/openwrt_release
 #
 # Add luci-app-amlogic
 svn co https://github.com/ophub/luci-app-amlogic/trunk/luci-app-amlogic package/luci-app-amlogic
+#Add tkk chajian
+src-git alist https://github.com/sbwml/luci-app-alist
+src-git passwall_packages https://github.com/xiaorouji/openwrt-passwall.git;packages
+src-git passwall_luci https://github.com/xiaorouji/openwrt-passwall.git;luci
+src-git kenzo https://github.com/kenzok8/openwrt-packages
 
 # Fix runc version error
 # rm -rf ./feeds/packages/utils/runc/Makefile
